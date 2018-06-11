@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Register from './components/Register'
 import App from './App'
 import {BrowserRouter, Route, Link} from 'react-router-dom'
+import RegisterConfirm from './components/RegisterConfirm';
 
 
 
@@ -9,20 +10,16 @@ import {BrowserRouter, Route, Link} from 'react-router-dom'
 class Routes extends Component{
     render(){
         return(
-            <React.Fragment>
                 <BrowserRouter>
-                    <Route exact path="/" component={App} />
-                 </BrowserRouter>
-                <BrowserRouter>
-                    <Route exact path="/register" component={Register} />
-                 </BrowserRouter>
-                 <BrowserRouter>
-                    <Route exact path="/login" component={App} />
-                 </BrowserRouter>
-                 <BrowserRouter>
-                    <Route exact path="/main" component={App} />
-                 </BrowserRouter>
-            </React.Fragment>
+                    <React.Fragment>
+                        <Route exact path="/" component={App} />
+                        <Route exact path="/register" component={Register} />
+                        <Route exact path="/registerConfirm" component={RegisterConfirm} />
+                    </React.Fragment>
+                </BrowserRouter>
+                
+                    
+           
                        
          )
     }

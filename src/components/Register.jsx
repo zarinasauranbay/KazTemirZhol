@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-import {BrowseRouter, Route, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import styled from "styled-components";
-import {requireImage} from './../helpers/helper'
 import './../index.css';
-
-
 
 class Register extends Component {
   render() {
     return (
-        <div>
+        <div className="registmain d-flex flex-column">
             <div className="header d-flex justify-content-center">
                 <img className="mt-5 mb-5"  src={require('./../images/logo.png')}  alt=""  />
             </div>
@@ -19,7 +16,10 @@ class Register extends Component {
             </div>
             <div className="d-flex flex-row justify-content-center mt-3">
             <input className="registInp mr-3 pl-3" type="text" placeholder="Введите ID"/>
-            <button className="enter">Войти</button>
+            <button className="enter"><Link to='/registerConfirm' className="enter">Войти</Link></button>
+            </div>
+            <div className="coop d-flex mb-4 justify-content-center align-items-end">
+                <p className="registCoop">© 2018 АО “Қазақстан Темір Жолы”. Все права защищены.</p>
             </div>
         </div>
       
