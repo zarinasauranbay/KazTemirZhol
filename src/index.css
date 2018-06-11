@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.registHeadline{
+  color: #5b5b60;
+}
+.registText{
+  color: #5b5b60;
+  font-size:1.2rem;
+  font-weight: lighter;
+}
+.enter{
+  color: #fff;
+  width: 8rem;
+  height: 3rem;
+  background-color: #0089e1;
+  border-radius: 5px;
+  font-weight: lighter;
+}
+.enter:focus,.registInp:focus {
+  outline:0;
+}
+.registInp{
+  font-style: italic;
+  border: 1px solid #ceced4;
+  border-radius: 5px;
+  width: 16rem;
+  font-weight: lighter;
+}
